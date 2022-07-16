@@ -41,31 +41,6 @@ dan untul modul hapus disini saya menghapus data daud :
 ![image](https://user-images.githubusercontent.com/103243638/178716049-23629f9d-f596-4795-9c09-286f219c5500.png)
 
 
-Modul data Obat Di dalam modul data obat saya menambahkan Triger
-
-// IMPLEMENTASI TRIGGER
-
-// table untuk trigger
-
-create table log_obat(id_log int(100) auto_increment primary key, id_obat int(10), nobat_lama varchar(100), obat_baru varchar(100), waktu date not null) // trigger
-
-create trigger update_nama_obat before update on obat for each row insert into log_obat set id_obat=old.id_obat, obat_lama = old.nama_obat, obat_baru=new.nama_obat, waktu = now();
-
-// END IMPLEMENTASI TRIGGER
-
-![image](https://user-images.githubusercontent.com/103243638/178713648-8cc08c2d-0eb8-4a8f-8307-b0dc2e1f03a0.png)
-
-![image](https://user-images.githubusercontent.com/103243638/178713777-4eac3b5c-d45b-451d-945b-da3e053950ee.png)
-
-implementasi view // IMPLEMENTASI VIEW
-
-CREATE VIEW viewPenyakit AS SELECT a.id_berobat, b.nama_pasien, b.jenis_kelamin, b.umur, a.keluhan_pasien, a.hasil_diagnosa, a.tgl_berobat, c.nama_dokter FROM berobat a JOIN pasien b ON a.id_pasien=b.id_pasien JOIN dokter c ON a.id_dokter=c.id_dokter WHERE b.jenis_kelamin='L'
-
-// END IMPLEMENTASI VIEW
-
-![image](https://user-images.githubusercontent.com/103243638/178714489-3d34476b-5aa1-45f5-a60e-d844baecdeed.png)
-
-
 
 
 
