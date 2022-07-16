@@ -6,6 +6,8 @@ NIM : 312010008
 
 KELAS : TI.20.D.1
 
+LINK YOUTUBE : https://youtu.be/LqAR3TfyzjQ
+
 Dari Tugas UTS sebelumnya saya membuat sebuah sistem informasi klinik sederhana dimana dalam sistem tersebut saya akan menampilkan
 
 Modul data pasien
@@ -62,69 +64,6 @@ CREATE VIEW viewPenyakit AS SELECT a.id_berobat, b.nama_pasien, b.jenis_kelamin,
 // END IMPLEMENTASI VIEW
 
 ![image](https://user-images.githubusercontent.com/103243638/178714489-3d34476b-5aa1-45f5-a60e-d844baecdeed.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
